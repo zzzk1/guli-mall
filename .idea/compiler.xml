@@ -15,6 +15,7 @@
         <module name="nacos-consistency" />
         <module name="nacos-plugin-default-impl" />
         <module name="nacos-trace-plugin" />
+        <module name="gulimall-gateway" />
         <module name="nacos-auth-plugin" />
         <module name="naming-test" />
         <module name="nacos-console" />
@@ -22,6 +23,7 @@
         <module name="nacos-address" />
         <module name="nacos-config" />
         <module name="nacos-api" />
+        <module name="renren-fast" />
         <module name="gulimall-ware" />
         <module name="nacos-datasource-plugin" />
         <module name="gulimall-coupon" />
@@ -42,13 +44,13 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="product" target="1.8" />
-      <module name="renren-fast" target="1.8" />
       <module name="renren-generator" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="gulimall-coupon" options="-parameters" />
+      <module name="gulimall-gateway" options="-parameters" />
       <module name="gulimall-member" options="-parameters" />
       <module name="gulimall-order" options="-parameters" />
       <module name="gulimall-product" options="-parameters" />
