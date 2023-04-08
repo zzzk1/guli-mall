@@ -1,5 +1,6 @@
 package com.atguigu.gulimall.product.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 
@@ -18,7 +19,11 @@ import lombok.Data;
 @TableName("pms_attr_group")
 public class AttrGroupEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
-
+	/**
+	 * 三级分类修改的时候回显路径
+	 */
+	@TableField(exist = false) // 数据库中不存在
+	private Long[] catelogPath;
 	/**
 	 * 分组id
 	 */
